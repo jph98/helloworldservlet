@@ -6,12 +6,12 @@
 	<display-name>Hello World</display-name>
 
 	<servlet>
-		<servlet-name>HelloServlet</servlet-name>
-		<servlet-class>com.froyo.HelloServlet</servlet-class>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>com.froyo.HelloWorld</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>HelloServlet</servlet-name>
+		<servlet-name>HelloWorld</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
