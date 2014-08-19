@@ -10,11 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HelloWorld extends HttpServlet {
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/plain");
-		response.setStatus(200);
-		PrintWriter writer = response.getWriter();
-		writer.println("Hello world");
+	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
+		res.setContentType("text/plain");
+		res.setStatus(200);
+		PrintWriter writer = res.getWriter();
+		writer.println("Hello world with method: " + req.getMethod());
 		writer.close();
 	}
 }
