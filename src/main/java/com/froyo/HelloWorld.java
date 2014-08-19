@@ -1,4 +1,4 @@
-package org.cloudfoundry.samples;
+package com.froyo;
 
 import java.io.IOException;
 import java.io.PrintWriter;
